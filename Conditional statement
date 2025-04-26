@@ -1,0 +1,514 @@
+
+ Question # 01:
+#include<iostream>
+using namespace std;
+int main()
+{
+	char ch;
+	cout<<"enter the character";
+	cin>>ch;
+	if(ch>='a'&&ch<='z')
+	cout<<"entered characer is lowercase";
+	else
+	cout<<"entered character is not lowercase";
+	return 0;
+}
+
+Question # 02:
+#include<iostream>
+using namespace std;
+int main()
+{
+	char status;
+	cout<<"entere the status";
+	cin>>status;
+	if(status=='s'||status=='S')
+	cout<<"the senior salesperson salary is 400";
+	else if(status=='j'||status=='J')
+	cout<<"the junior salespereson salary is 275";
+	else
+	cout<<"invalid status";
+	return 0;
+}
+Question # 03:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cout<<"enter the value of a";
+	cin>>a;
+	cout<<"enter the value of b";
+	cin>>b;
+	cout<<"enter the value of c";
+	cin>>c;
+	if(a==0)
+	cout<<"entered value is not zero";
+	else if(b%a==0&&c%a==0)
+	cout<<"common divisor of both";
+	else
+	cout<<"not common divisior";
+	return 0;
+}
+
+Question # 04:
+#include<iostream>
+using namespace std;
+int main()
+{
+    char ch;
+    cout<<"enter the value";
+    cin>>ch;
+    if(ch=='S'||ch=='s')
+    { float side;
+    cout<<"enter the side";
+    cin>>side;
+	float area=side*side;
+	cout<<"Area="<<area;
+	}
+	else if(ch=='T'||ch=='t')
+	{ float base,height;
+	cout<<"enter the value";
+	cin>>base;
+	cout<<"enter the value";
+	cin>>height;
+	float area=0.5*base*height;
+	cout<<"Area="<<area;
+	}
+	else
+	cout<<"invalid input";
+	return 0;
+}
+
+Question # 05:
+#include<iostream>
+using namespace std;
+int main()
+{ 
+   char letter;
+   cout<<"enter the value of letter";
+   cin>>letter;
+   if(letter=='f'||letter=='F')
+   {  float n;
+   cout<<"enter the value of tmperature in fahrenheit";
+   cin>>n;
+   float C=(5.0/9.0)*(n-32);
+   cout<<"tem in celius"<<C;
+ }
+      else if(letter=='C'||letter=='c')
+  {   float n;
+       cout<<"enter the value of temperature in celius";
+       cin>>n;
+       float F=(9.0/5.0)*(n+32);
+       cout<<"tem in fahreheit"<<F;
+  }
+  else
+  cout<<"invalid input";
+    
+	return 0;
+}
+
+Question # 06:
+#include<iostream>
+using namespace std;
+int main()
+{ 
+   int n;
+   cout<<"Enter the number";
+   cin>>n;
+   switch(n)
+   {
+   	case 1:
+   		n==1;
+   		cout<<"Western Digital";
+   		break;
+   	case 2:
+   		n==2;
+   		cout<<"3M Corporation";
+   		break;
+    case 3:
+    	n==3;
+    	cout<<"Maxell Corporation";
+    	break;
+    case 4:
+    	n==4;
+    	cout<<"Sony Corporation";
+    	break;
+    case 5:
+    	n==5;
+    	cout<<"Verbatim Corporation";
+    	break;
+    default:
+    	cout<<"Invalid Input";
+   }
+   return 0;
+}
+
+Question # 07:
+#include<iostream>
+using namespace std;
+int main()
+{
+   cout<<"A for Adventure Movies"<<endl;
+   cout<<"C for Comedy Movies"<<endl;
+   cout<<"F for Family Movies"<<endl;
+   cout<<"H for Horror Movies"<<endl;
+   cout<<"S for Science Fiction Movies"<<endl; 
+   char ch;
+   cout<<"Enter the Character";
+   cin>>ch;
+   	if(ch=='A')
+   		cout<<"Adventure Movies";
+   	else if(ch=='C')
+   		cout<<"Comedy Movies";
+    else if(ch=='F')
+    	cout<<"Family Movies";
+    else if(ch=='H')
+    	cout<<"Horror Movies";
+    else if(ch=='S')
+    	cout<<"Science Fiction Movies";
+    else
+    	cout<<"Invalid Input";
+   return 0;
+}
+
+Question # 08:
+#include<iostream>
+using namespace std;
+int main()
+{
+	char ch;
+	cout<<"enter the character";
+	cin>>ch;
+	if(ch=='I'||ch=='i')
+	{ double value,convertedValue;
+	cout<<"enter the value in centimeter";
+	cin>>value;
+	convertedValue=2.54*value;
+	cout<<convertedValue<<"in inch";
+	}
+	  else if(ch=='G'||ch=='g')
+   { double value,convertedValue;
+   	cout<<"enter the value in liters";
+	cin>>value;
+	convertedValue=3.785*value;
+	cout<<convertedValue<<"in gallon";
+   } 
+      else if(ch=='M'||ch=='m')
+   { double value,convertedValue;
+	cout<<"enter the value in kilometer";
+	cin>>value;
+	convertedValue=1.609*value;
+	cout<<convertedValue<<"in Mile";
+   }
+      else if(ch=='P'||ch=='p')
+   { double value,convertedValue;
+   	cout<<"enter the value in kiolgrams";
+	cin>>value;
+	convertedValue=0.4536*value;
+	cout<<convertedValue<<"in pound";
+}
+    else
+    cout<<"invalid input";
+    return 0;
+}
+
+Question # 09:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"enter the number";
+	cin>>n;
+	if(n/400==0)
+	cout<<"This year is a leap year";
+	else 
+	cout<<"This is not a leap year";
+    return 0;
+}
+
+Question # 10:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int temp;
+	cout<<"Enter the Temperture";
+	cin>>temp;
+	if(temp>35)
+	cout<<"Hot Day";
+	else if(temp>25&&temp<35)
+	cout<<"Pleasent Day";
+	else if(temp<25)
+	cout<<"Cool Day";
+	else 
+	cout<<"Invalid Input";
+    return 0;
+}
+
+Question # 11:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int marks;
+	cout<<"Enter the Marks";
+	cin>>marks;
+	if(marks>=80)
+	cout<<"your grade is A+";
+	else if(marks>70&&marks<80)
+	cout<<"your grade is A";
+	else if(marks>60&&marks<70)
+	cout<<"your grade is B";
+	else if(marks>50&&marks<60)
+	cout<<"your grade is C";
+	else if(marks>40&&marks<50)
+	cout<<"your grade is D";
+	else if(marks>33&&marks<40)
+	cout<<"your grade is E";
+	else if(marks<33)
+	cout<<"your grade is F";
+	else 
+	cout<<"Invalid Input";
+    return 0;
+}
+
+Question # 12:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int sub1,sub2,sub3;
+	cout<<"Enter the Marks";
+	cin>>sub1;
+	cout<<"Enter the Marks";
+	cin>>sub2;
+	cout<<"Enter the Marks";
+	cin>>sub3;
+	int sum=sub1+sub2+sub3;
+	int avg=sum/3;
+	cout<<"Sum="<<sum<<endl;
+	cout<<"Average="<<avg<<endl;
+	if(sum>=40)
+	cout<<"pass";
+	else
+	cout<<"Fail";
+	return 0;
+}
+
+Question # 13:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int hours,minutes;
+	cout<<"Enter the 24-hours format";
+	cin>>hours>>minutes;
+	string period="AM";
+	if(hours >=12)
+	period="PM";
+	if(hours==0)
+	hours=12;
+	else if(hours>12)
+	hours=hours-12;
+	cout<<"standard time="<<hours<<":";
+	if(minutes<10)
+	cout<<"0";
+	cout<<minutes<<" "<<period<<endl;
+	return 0;
+}
+
+Question # 14:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cout<<"Enter the Values"<<endl;
+	cin>>a>>b>>c;
+	int d=b*b-4*a*c;
+	if(d==0)
+	cout<<"One real solutions";
+	else if(d<0)
+	cout<<"Two real solution";
+	else
+	cout<<"No real solution";
+	return 0;
+}
+
+Question # 15:
+#include<iostream>
+using namespace std;
+int main()
+{
+	float salary,tax;
+	double netSalary;
+	cout<<"enter the total Salary";
+	cin>>salary;
+	if(salary>30000)
+	{tax=salary*0.20;
+	cout<<"Your income tax is"<<tax<<endl;
+	}
+	  else if(salary<30000&&salary>20000)
+	  {tax=salary*0.15;
+	  cout<<"Your income tax is"<<tax<<endl;
+	  }
+	   else if(salary<20000)
+	   {tax=salary*0.10;
+	   cout<<"Your income tax is"<<tax<<endl;
+	   }
+	   netSalary=salary-tax;
+	   cout<<"Your net salary after the taax is"<<netSalary;
+           return 0;
+}
+
+Question # 16:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int year;
+    string monthName;
+    cout<<"enter the year";
+    cin>>year;
+    cout<<"enter Month Name";
+    cin>>monthName;
+    if(monthName=="feburary")
+    cout<<monthName<<"\t"<<year<<"\t"<<"has 28 or 29 days";
+     else if(monthName=="januarary"||monthName=="march"||monthName=="may"||monthName=="july"||monthName=="august"||monthName=="october"||monthName=="december")
+     cout<<monthName<<"\t"<<year<<"\t"<<"has 31 days";
+      else if(monthName=="april"||monthName=="june"||monthName=="stepmeber"||monthName=="november")
+      cout<<monthName<<"\t"<<year<<"\t"<<"has 30 days";
+     else
+     cout<<"invalid input";
+     return 0;
+}
+
+Question # 17:
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"M =Motorcycle"<<endl;
+    cout<<"C =Car"<<endl;
+    cout<<"B =Bus"<<endl;
+    int days;
+    char ch;
+    cout<<" Enter the Charater";
+    cin>>ch;
+    cout<<"Enter the Days";
+    cin>>days;
+    if (ch=='M')
+    {float totalCharge=days*10;
+    cout<<"total Charges="<<totalCharge;
+	}
+	  else if(ch=='C')
+	  {float totalCharge=days*20;
+	  cout<<"Total Charges="<<totalCharge;
+	  }
+	     else if(ch=='B')
+	     {float totalCharge=days*30;
+	     cout<<"Total Charges="<<totalCharge;
+		 }
+	else
+	cout<<"Invalid Input";
+     return 0;
+}
+
+Question # 18:
+#include<iostream>
+using namespace std;
+int main()
+{
+	char ch;
+	cout<<"enter the character";
+	cin>>ch;
+	if(ch=='c'||ch=='C')
+	{ double value,convertedValue;
+	cout<<"enter the value in inches";
+	cin>>value;
+	convertedValue=0.394*value;
+	cout<<convertedValue<<"in centimeter";
+	}
+	  else if(ch=='l'||ch=='L')
+   { double value,convertedValue;
+   	cout<<"enter the value in gallon";
+	cin>>value;
+	convertedValue=0.264*value;
+	cout<<convertedValue<<"in Liter";
+   } 
+      else if(ch=='k'||ch=='K')
+   { double value,convertedValue;
+	cout<<"enter the value in Miles";
+	cin>>value;
+	convertedValue=0.622*value;
+	cout<<convertedValue<<"in Kilometers";
+   }
+      else if(ch=='q'||ch=='Q')
+   { double value,convertedValue;
+   	cout<<"enter the value in Pounds";
+	cin>>value;
+	convertedValue=2.2*value;
+	cout<<convertedValue<<"in Kilogram";
+}
+    else
+    cout<<"invalid input";
+    return 0;
+}
+
+Question # 19:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"enter the value";
+	cin>>n;
+		if(n>0&&n%2==0)
+		cout<<n<<" postive even number";
+		else if(n>0&&n%2==0)
+		cout<<n<<" negative even number";
+		else if(n>0&&n%2!=0)
+		cout<<n<<" postive odd number";
+	
+	   else	if(n>0&&n%2!=0)
+		cout<<n<<" negative odd number";
+		else
+			cout<<"invalid input";
+    return 0;
+}
+
+Question # 20:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int s1,s2,s3;
+	cout<<"enter the value"<<endl;
+	cin>>s1;
+	cout<<"enter the value"<<endl;
+	cin>>s2;
+	cout<<"enter the value"<<endl;
+	cin>>s3;
+     if(s1==s2&&s2==s3&&s1==s3)
+	cout<<"Equiliateral triangle"<<endl;
+	 if(s1==s2&&s2!=s3&&s1!=s3)
+	 cout<<"isosceles triangle"<<endl;
+	  else if(s1!=s2&&s2!=s3&&s1!=s3)
+	  cout<<"Scelene triangle"<<endl;
+	  else
+	  cout<<"invalid input";
+    return 0;
+}
+
+Question no 21:
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"Area of circle=PI*radius*Radius"<<endl;
+	cout<<"Area of rectangle=width*length"<<endl;
+	cout<<"Area of triangle=0.5*height*base";
+    return 0;
+}
