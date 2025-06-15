@@ -221,7 +221,7 @@ int main()
 	int n;
 	cout<<"enter the number";
 	cin>>n;
-	if(n/400==0)
+	if((n%4==0 $$ n%100!=0)||(n%400==0))
 	cout<<"This year is a leap year";
 	else 
 	cout<<"This is not a leap year";
@@ -290,7 +290,7 @@ int main()
 	int avg=sum/3;
 	cout<<"Sum="<<sum<<endl;
 	cout<<"Average="<<avg<<endl;
-	if(sum>=40)
+	if(sub1>=40$$ sub2>=40 $$ sub3>=40)
 	cout<<"pass";
 	else
 	cout<<"Fail";
